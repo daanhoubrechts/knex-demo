@@ -3,6 +3,10 @@
   Depending on the environment, the configuration will be different.
   For now, we only have a development environment (also defined in .env file).
 */
+
+import dotenv from "dotenv";
+dotenv.config();
+
 const dbName = process.env.DATABASE_NAME || "database.sqlite3";
 
 const config = {
